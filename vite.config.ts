@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   
   return {
-    // The base path must have slashes on both sides
+    // Fixed: Added leading and trailing slashes
     base: '/PIX2PDF/', 
     
     server: {
